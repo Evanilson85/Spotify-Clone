@@ -1,0 +1,265 @@
+.section {
+    background-color: #ffc362;
+    padding-top: 245px;
+    padding-bottom: 0;
+}
+
+.s-main {
+    width: 100%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-main h1 {
+    font-family: "Nunito" Arial, Helvetica, sans-serif;
+    /* font-family: 'Krona One', sans-serif; */
+    font-size: 43px;
+    color: white;
+    margin: 24px 0 12px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.section button {
+    background-color: #1db954;
+    border: none;
+    padding: 30px;
+    border-radius: 40px;
+    /* width: 100%; */
+    max-width: 370px;
+    /* margin: 20px 0; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.section button:hover {
+    background-color: #1ED760;
+}
+
+.section button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.section p {
+    text-align: center;
+}
+
+.section p a {
+    color: white;
+    text-decoration: white;
+}
+
+/* main */
+
+.row {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.row h2 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 32px;
+    font: 800;
+    /* font-family: "Circular"; */
+    font-family: "Montserrat";
+}
+
+.row p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row button {
+    height: 50px;
+    width: 255px;
+    /*   */
+    border: 2px solid #616467;
+    background-color: transparent;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.row button a {
+    color: #616467;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* carroseul */
+
+.car {
+    display: flex;
+    overflow: scroll;
+    height: 300px;
+    margin-top: 35px;
+}
+
+.container-rows {
+    height: 250px;
+    width: 55%;
+    border: none;
+    margin: 10px;
+    text-align: center;
+}
+
+.container-rows h2 {
+    font-size: 18px;
+    color: #919496;
+}
+
+.container-rows h4 {
+    font-size: 14px;
+    color: #C1C3C6;
+}
+
+.container-rows a {
+    font-size: 14px;
+    color: #1DB954;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+.container-rows .imgs {
+    height: 168px;
+    width: 168px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.container-rows .imgs img {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    /* carrocel */
+    .car {
+        height: 700px;
+        flex-wrap: wrap;
+        margin: 0 auto 50px;
+    }
+    .container-rows {
+        flex: 1 1 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        height: auto;
+        background-image: url("../img/car.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container-rows .imgs {
+        display: none;
+    }
+    .info {
+        position: absolute;
+    }
+
+    .info {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: #242626cb;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-rows:hover .info {
+        /* padding:10px ; */
+        bottom: 0;
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+@media(min-width :872px) {
+    .container-rows {
+        flex: 1 1 250px;
+    }
+}
+
+@media(min-width :990px) {
+    .section {
+        background: radial-gradient(ellipse at center, #f6cb6c 0%, #f3c65d 0%, #f2ae54 100%);
+    }
+    .s-main h1 {
+   
+        font-size: 73px;
+        margin: 24px 0 45px;
+    }
+    .section button {
+        height: 70px;
+    }
+    .section p {
+        margin-top: 100px;
+    }
+    /* main */
+    main {
+        position: relative;
+        z-index: 1;
+    }
+    .row {
+        height: 370px;
+        display: flex;
+        justify-content: center;
+    }
+    .car {
+        height: 850px;
+        flex-wrap: wrap;
+        max-width: 1224px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .container-rows {
+        flex: 1 1 300px;
+    }
+   
+   
+
+        .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
